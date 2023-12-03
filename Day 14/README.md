@@ -4,5 +4,6 @@
 
 ## Higher Lower Game Project
 
-https:/![day14](https://github.com/diorithaliti/Python/assets/74361197/747fe28e-14fd-4c85-9225-8806306ecbee)
+![day14](https://github.com/diorithaliti/Python/assets/74361197/08273b0a-159e-4320-9cc1-28f10385f937)
+
 /replit.com/@diorithaliti/higher-lower-final
