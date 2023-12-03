@@ -4,6 +4,7 @@
 
 ## Secret Auction
 
-![secret auction](secret_auction.gif)
+
+![day9](https://github.com/diorithaliti/Python/assets/74361197/d3bda11f-09ff-41f7-8d0a-55d43524cdc1)
 
 https://replit.com/@diorithaliti/blind-auction
