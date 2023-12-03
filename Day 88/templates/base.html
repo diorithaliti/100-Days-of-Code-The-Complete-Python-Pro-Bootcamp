@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .header {
+            text-align: center;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .segment {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .label {
+            font-size: 14px;
+        }
+        .button {
+            margin-left: 10px;
+        }
+        .not-complete {
+            color: grey;
+        }
+        .completed {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui container">
+        <h1 class="ui center aligned header">Todo App</h1>
+
+        <form class="ui form" action="/add" method="post">
+            <div class="field">
+                <label>Todo Title</label>
+                <div class="ui action input">
+                    <input type="text" name="title" placeholder="Enter Todo...">
+                    <button class="ui blue button" type="submit">Add</button>
+                </div>
+            </div>
+        </form>
+
+        <hr>
+
+        {% for todo in todo_list %}
+        <div class="ui segment">
+            <div>
+                <h2 class="ui header">{{ todo.title }}</h2>
+                {% if todo.complete == False %}
+                <span class="ui label not-complete">Not Complete</span>
+                {% else %}
+                <span class="ui label completed">Completed</span>
+                {% endif %}
+            </div>
+            <div>
+                <a class="ui blue button" href="/update/{{ todo.id }}">Update</a>
+                <a class="ui red button" href="/delete/{{ todo.id }}">Delete</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+from woocommerce import API
+import sqlite3
+
+# Connection to Wordpress
+wcapi = API(
+    url="http://localhost:8080/wordpress",
+    consumer_key="ck_da1021dfafd2208628c730e256229652b79a4ee7",
+    consumer_secret="cs_112d2abf80537e107826810139c2d1c69f5a602c",
+    version="wc/v3"
+)
+
+# Connection to Database
+db = sqlite3.connect("wp-database.db")
+cursor = db.cursor()
+database = cursor.execute("SELECT * FROM ItemsStock")
+
+# Create a dictionary and fill it with items from DB
+
+stock_from_db = {}
+
+for each in database:
+    stock_from_db[each[0]] = each[1]
+
+# Every item on dictionary sent it to the WP, with ID of product
+
+for each in stock_from_db:
+    data = {
+        "stock_quantity": stock_from_db[each]
+    }
+
+    print(wcapi.put(f"products/{each}", data).json())
+
+# Get products from WP
+# product = wcapi.get("products").json()

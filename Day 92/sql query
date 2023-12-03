@@ -1,0 +1,7 @@
+SELECT [DUKAT$Item Ledger Entry].[Item No_],
+DUKAT$Item.Description,
+SUM([DUKAT$Item Ledger Entry].Quantity) AS 'SUM'
+FROM [DUKAT$Item Ledger Entry]
+INNER JOIN DUKAT$Item ON [DUKAT$Item Ledger Entry].[Item No_] = DUKAT$Item.No_
+WHERE [DUKAT$Item Ledger Entry].[Location Code] = 'W-TR'
+GROUP BY [DUKAT$Item Ledger Entry].[Item No_], DUKAT$Item.Description

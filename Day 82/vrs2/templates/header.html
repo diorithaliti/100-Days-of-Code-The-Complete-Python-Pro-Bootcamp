@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diorit's Webpage</title>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <div class="loader"></div>
+    <div id="myDiv">
+        <!--HEADER-->
+        <div class="header">
+            <div class="bg-color">
+                <header id="main-header">
+                    <nav class="navbar navbar-default navbar-fixed-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="href="{{url_for('home')}}">D<span class="logo-dec">H</span></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="{{url_for('home')}}">Home</a></li>
+                                    <li class=""><a href="#feature">About</a></li>
+<!--                                    <li class=""><a href="#service">Services</a></li>-->
+                                    <li class=""><a href="#portfolio">Portfolio</a></li>
+                                    <!--                  <li class=""><a href="#testimonial">Testimonial</a></li>-->
+                                    <!--                  <li class=""><a href="#blog">Blog</a></li>-->
+                                    <li class=""><a href="{{url_for('contact')}}">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                </head>

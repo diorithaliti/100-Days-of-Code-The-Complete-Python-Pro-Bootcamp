@@ -1,0 +1,70 @@
+{% include "head.html" %}
+<html lang="en">
+
+<style>
+    body {
+        background-color: #3498db;
+        animation: colorChange 10s infinite alternate; /* Change the time and type of animation as needed */
+    }
+
+    @keyframes colorChange {
+        0% {
+            background-color: #3498db;
+        }
+
+        100% {
+            background-color: #2ecc71; /* Change to the desired end color */
+        }
+    }
+
+    .cover-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: space-between;
+    }
+
+    main {
+        padding: 20px; /* Adjust the padding value as needed */
+    }
+</style>
+
+<body class="d-flex text-center text-white">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                {% include "nav.html" %}
+            </div>
+        </header>
+
+        <main class="px-3">
+            <div class="py-5 text-center">
+                <h2 style="font-family: 'Arial', sans-serif; color: #ecf0f1; font-size: 40px;">Create a Palette</h2>
+                <p class="lead" style="color: #ecf0f1;">
+                    Upload a .jpg file to get started<br>Once the color identification process is complete, you'll find your custom palette on the "Library" tab.
+                    <br>Please be patient -- the process can take a few minutes!
+                </p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-8 offset-md-2">
+                    <form method="post" enctype="multipart/form-data">
+                        {{ form.hidden_tag() }}
+                        <div class="mb-3">
+                            {{ form.file.label(class="form-label", style="color: #ecf0f1;") }}
+                            {{ form.file(class="form-control", style="color: #ecf0f1;") }}
+                        </div>
+                        {{ form.submit(class="btn btn-outline-light") }}
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        {% include "footer.html" %}
+    </div>
+
+    {% include "js.html" %}
+</body>
+
+</html>

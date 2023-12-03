@@ -1,0 +1,51 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Restaurants{% endblock %}
+<style>
+    {% block styles %}
+    {{super()}}
+    <link rel="stylesheet"
+      href="{{url_for('.static', filename='css/styles.css')}}">
+    {% endblock %}
+
+</style>
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h1>All Cafes</h1>
+
+            <table class="table table-bordered table-dark">
+                <thead>
+                <tr>
+                    {%for n in range(0, 7)%}
+                    <th scope="col">{{cafes[0][n]}}</th>
+                    {%endfor%}
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    {%for m in range(1, 7)%}
+                    <td scope="col">{{cafes[m][0]}}</td>
+                    <td scope="col"><a href="{{cafes[m][1]}}">Maps Link</a></td>
+                    <td scope="col">{{cafes[m][2]}}</td>
+                    <td scope="col">{{cafes[m][3]}}</td>
+                    <td scope="col">{{cafes[m][4]}}</td>
+                    <td scope="col">{{cafes[m][5]}}</td>
+                    <td scope="col">{{cafes[m][6]}}</td>
+                </tr>
+                {%endfor%}
+                </tr>
+                </tbody>
+            </table>
+
+
+            <p><a href="#">Return to index page</a></p>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
