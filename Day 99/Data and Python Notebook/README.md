@@ -1,5 +1,5 @@
 # Day 99
-## Portfolio Project - Analyzing Deaths Involving Police in the United States
+## Portfolio Project - Predicting Earnings using Multivariable Regression
 
 ![day99 1](https://github.com/diorithaliti/Python/assets/74361197/cd6cbcf4-1d77-4391-bffe-192afce616f8)
 
