@@ -153,9 +153,9 @@ Complete "100 Days of Code - The Complete Python Pro Bootcamp for 2022" course f
 
 
 
+[Python bootcamp.pdf](https://github.com/diorithaliti/Python/files/13538674/Python.bootcamp.pdf)
 
 
-![certificate](https://github.com/diorithaliti/Python-Bootcamp/assets/74361197/e7df0b69-5613-4ad0-8af0-d3ab84c606a0)
 
 
 
