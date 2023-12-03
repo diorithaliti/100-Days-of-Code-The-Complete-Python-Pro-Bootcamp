@@ -110,7 +110,7 @@ Complete "100 Days of Code - The Complete Python Pro Bootcamp for 2022" course f
 - [Day 97](day97): Portfolio Project - Sent a WhatsApp Message with Python
 - [Day 98](day98): Portfolio Project - Analysed and Visualise the Space Race
 - [Day 99](day99): Portfolio Project - Analyzing Deaths Involving Police in the United States
-- [Day 100](day100): Portfolio Project - Predicting Earnings using Multivariable Regression
+- [Day 100](finalday100): Portfolio Project - Predicting Earnings using Multivariable Regression
 
 ## Tools and technologies
 
