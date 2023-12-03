@@ -3,6 +3,7 @@
 
 ## Band Name Generator
 
+![Uploading day1.png…]()
 
 
 https://replit.com/@diorithaliti/band-name-generator
