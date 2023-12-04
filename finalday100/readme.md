@@ -1,5 +1,5 @@
 # Day 100
-Used the famous National Longitudinal Survey of Youth 1997-2011 to run a Multivariable Regression to predict salaries. How are earnings determined and what does this imply from government policy?
+Received insights from combining US census data and the Washington Post's database on deaths by police in the United States.
 ## Portfolio Project - Analyzing Deaths Involving Police in the United States
 
 ![day100 1](https://github.com/diorithaliti/Python/assets/74361197/5c5ec3bb-ee0b-4049-9792-1a796b37efc3)
