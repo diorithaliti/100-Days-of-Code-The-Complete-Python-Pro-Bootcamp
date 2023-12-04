@@ -1,6 +1,6 @@
 # Day 44
 
-Built final a personal website.
+Built a personal website.
 
 ## Introduction to HTML and CSS
 
