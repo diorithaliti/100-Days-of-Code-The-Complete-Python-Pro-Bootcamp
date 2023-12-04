@@ -158,7 +158,13 @@ Complete "100 Days of Code - The Complete Python Pro Bootcamp for 2022" course f
 ![Python bootcamp_page-0001 (1)](https://github.com/diorithaliti/Python/assets/74361197/20e146db-3c62-4369-919b-11e083df11b4)
 
 
+This certificate above verifies that Diorit Haliti completed the course 
+[100 Days of Code - The Complete Python Pro Bootcamp for 2021](https://www.udemy.com/course/100-days-of-code/)  on 30/3/2022 as taught by Dr. Angela Yu on Udemy. 
+The certificate indicates the entire course was completed as validated by the student. 
+The course duration represents the total video hours of the course at the time of most recent completion.
 
+
+---
 
 
 ### @diorithaliti🐍 2023
