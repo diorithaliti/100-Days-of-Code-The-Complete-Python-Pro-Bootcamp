@@ -25,7 +25,7 @@ def home():
 def login():
     login_form = LoginForm()
     if login_form.validate_on_submit():
-        if login_form.email.data == "admin@email.com" and login_form.password.data == "12345678":
+        if login_form.email.data == "halitidiorit@gmail.com" and login_form.password.data == "diorit123":
             return render_template("success.html")
         else:
             return render_template("denied.html")
